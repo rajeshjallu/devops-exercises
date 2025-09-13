@@ -1,0 +1,13 @@
+name: Trigger Reusable Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-reusable:
+    uses: rajesh1218/hello-world/blob/master/.github/workflows/reusable.yml@master
+    # with:
+    #   environment: "production"
+    #   image_tag: "${{ github.sha }}"
+    # secrets:
+    #   DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
