@@ -5,7 +5,7 @@ on:
 
 jobs:
   call-reusable:
-    uses: rajesh1218/hello-world/blob/master/.github/workflows/reusable.yml@master
+    uses: rajesh1218/hello-world/.github/workflows/reusable.yml@master
     # with:
     #   environment: "production"
     #   image_tag: "${{ github.sha }}"
